@@ -1,0 +1,16 @@
+
+match (n: Doctor) return n.id as ID, n.name as Doctor, n.speciality as Speciality, n.grade as Grade limit 10
+
+match (n: Pharmacy) - [:SELLS] -> (d: Drug) where d.name = "Novolog PenFill" return n.id as ID, n.name as Pharmacies
+
+match (n: Patient) where n.diabetes_type = "Diabetes Type 2" return n.id as ID, n.name as Patient, n.age as Age limit 10 
+
+match (n:Patient) return n.name as Patient, n.age as Age, n.medical_history as Previous_Diseases limit 20 
+
+Hello Sir,
+As requested, we brought some adjustments on our python project. This Final version includes the following ameliorations:
+
+The program now takes into consideration typos and return the corresponding typo error. For example: Typos when creating/deleting nodes or relation labels. Or creating relations between nodes that does not exist in the database.
+The program initialises itself from the previous state of the database. So, you can start with any task you want on the GUI such as directly deleting a node or creating a relation between nodes that were previously created from past working sessions. There is some sort of initialisation of the current database state from most recent state. Hence each logging session is just a continuation from the preivous one, unless the database has been droped.
+A new pretty way of displaying query results in tabular format on both Admin and User interfaces.
+
