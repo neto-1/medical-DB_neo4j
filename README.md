@@ -11,9 +11,11 @@ The headers are very import for the code and should exactly follow the given ord
 
 # Doctor CSV file
 `id,name,grade,speciality,email,contact`
+
 1,John,Prof,Diabetologist,myemail,mycontact
 
 # Patient CSV file
 `id,name,age,weight,medical_history,diabetes_type,on_treatment,telefon`
+
 1,Alice,28,65,Hypertension,Diabetes type 2,Yes,hercontact
 
