@@ -19,3 +19,5 @@ The headers are very import for the code and should exactly follow the given ord
 
 1,Alice,28,65,Hypertension,Diabetes type 2,Yes,hercontact
 
+# Database Sample (Neo4j output)
+<img width="1540" height="714" alt="image" src="https://github.com/user-attachments/assets/806f6bfc-33e8-47fe-9535-840de606a739" />
